@@ -1,0 +1,256 @@
+/* акцент (синій) #2196F3
+
+    білий #FFFFFF
+
+    колір тексту заголовків (чорний) #212121 
+
+    другорядний олір тексту, абзаци(сірий) #757575
+
+    сірий прозорий #FFFFFF 60%   rgba(255, 255, 255, 0.6)
+
+    колір героя #2F303A
+
+    колір фону основний #E5E5E5
+
+    колір фону другорядний #F5F4FA
+
+*/
+:root {
+    /* text colors */
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --title-color: #212121;
+    --paragraph-color: #757575;
+    --transparent-color: rgba(255, 255, 255, 0.6);
+
+    /* background colors */
+    --hero-color: #2F303A;
+    --main-background: #E5E5E5;
+    --secondary-background: #F5F4FA;
+}
+
+.list {
+    list-style: none;
+}
+
+
+body {
+    background-color: #F5F4FA;
+    color: #757575;
+
+    font-family: Roboto,
+        sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--white-color);
+}
+
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: var(--title-color);
+}
+
+
+/* Site nav */
+.site-nav .link {
+    color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* Contact-nav */
+.contact-nav .contact {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-nav .contact:hover,
+.contact-nav .contact:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* MAIN */
+/* Hero section */
+.hero-title {
+    color: var(--white-color);
+    background-color: var(--hero-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* button */
+.button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+}
+
+
+/* common title */
+.section-title {
+    color: var(--title-color);
+
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* benefits section*/
+.benefits-list .title {
+    color: var(--title-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.benefits-list-text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/*  Our Team section */
+
+.team-list .title {
+    color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/* our team section */
+.team {
+    background-color: var(--main-background);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--hero-color);
+}
+
+.logo-accent-white {
+    color: var(--white-color);
+}
+
+.address {
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.address:hover,
+.address:focus,
+.contact-nav .contact-foot:hover,
+.contact-nav .contact-foot:focus {
+    color: var(--accent-color);
+}
+
+.contact-nav .contact-foot {
+    color: var(--transparent-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+
+
+
+
+/* PORTFOLIO SYLES */
+/* portfolio section */
+
+.filter-buttons:hover,
+.filter-buttons:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.filter-buttons {
+    color: var(--title-color);
+    background-color: var(--secondary-background);
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-list .title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+
+.portfolio-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+}
