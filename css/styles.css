@@ -27,6 +27,9 @@
     --hero-color: #2F303A;
     --main-background: #E5E5E5;
     --secondary-background: #F5F4FA;
+
+    /* button hover colors */
+    --button-bcg-hover-color: #188CE8;
 }
 
 .list {
@@ -35,12 +38,11 @@
 
 
 body {
-    background-color: #F5F4FA;
-    color: #757575;
+    background-color: var(--white-color);
+    color: var(--paragraph-color);
 
     font-family: Roboto,
         sans-serif;
-    letter-spacing: 0.03em;
 }
 
 /* HEADER */
@@ -87,7 +89,7 @@ body {
 
 /* Contact-nav */
 .contact-nav .contact {
-    color: var(--title-color);
+    color: var(--paragraph-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -95,8 +97,8 @@ body {
     text-decoration: none;
 }
 
-.contact-nav .contact:hover,
-.contact-nav .contact:focus {
+.contact:hover,
+.contact:focus {
     color: var(--accent-color);
 }
 
@@ -104,9 +106,13 @@ body {
 
 /* MAIN */
 /* Hero section */
+.hero {
+    background-color: var(--hero-color);
+}
+
 .hero-title {
     color: var(--white-color);
-    background-color: var(--hero-color);
+    text-transform: uppercase;
 
     font-weight: 900;
     font-size: 44px;
@@ -129,8 +135,7 @@ body {
 
 .button:hover,
 .button:focus {
-    color: var(--accent-color);
-    background-color: var(--white-color);
+    background-color: var(--button-bcg-hover-color);
 }
 
 
@@ -147,6 +152,7 @@ body {
 /* benefits section*/
 .benefits-list .title {
     color: var(--title-color);
+    text-transform: uppercase;
 
     font-size: 14px;
     line-height: 1.14;
@@ -159,6 +165,10 @@ body {
 
 /*  Our Team section */
 
+.team {
+    background-color: var(--secondary-background);
+}
+
 .team-list .title {
     color: var(--title-color);
 
@@ -167,16 +177,16 @@ body {
     line-height: 1.2;
 }
 
+.developer-cards {
+    background-color: var(--white-color);
+}
+
 .team-list-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
 }
 
-/* our team section */
-.team {
-    background-color: var(--main-background);
-}
 
 /* FOOTER */
 .footer {
@@ -197,8 +207,8 @@ body {
     text-decoration: none;
 }
 
-.address:hover,
-.address:focus,
+/* .address:hover,
+.address:focus, */
 .contact-nav .contact-foot:hover,
 .contact-nav .contact-foot:focus {
     color: var(--accent-color);
